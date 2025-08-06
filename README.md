@@ -1,21 +1,43 @@
-# Web-Page
 # 🎬 OMDb Movie Search App
 
-A simple and responsive movie search web application using the http://www.omdbapi.com/). Enter any movie title and instantly see a list of matching results with posters and basic details.
+A responsive and interactive movie search web application powered by the [OMDb API](http://www.omdbapi.com/). Users can search movies by title and view details such as posters and release years.
 
 ---
 
 ## 📌 Overview
 
-This app uses the following **OMDb API endpoints**:
+This app allows users to:
+- Search for movies by entering a title.
+- View movie posters, titles, and release years.
+- See placeholder images if a movie poster is unavailable.
+  
+---
 
+## 🔗 Why OMDb API?
+
+We chose the **OMDb API** because:
+- It is a free and public API specifically designed for retrieving movie information.
+- It offers:
+  - A **Search endpoint** for broad title-based lookups.
+  - A **Detail endpoint** for getting complete movie data.
+- The API is lightweight, easy to use, and does not require authentication headers—only an API key.
+
+Used Endpoints:
 - **Search Endpoint**  
   `https://www.omdbapi.com/?s={SEARCH_TERM}&apikey={YOUR_API_KEY}`  
-  ➤ Used to retrieve a list of movies that match the user’s search term.
-     This endpoint is used because it returns a list of movies based on a search keyword, which is exactly what we need for a search-based movie listing app.
-  **Usage**
-   Enter the movie name you want to search and the list will be showed instantly
+  Used to retrieve a list of movies based on user input.
 
-  **Challenges**
-  Forgetting to insert the API key
-  Using an expired or invalid key
+- **Detail Endpoint**  
+  `https://www.omdbapi.com/?i={IMDB_ID}&apikey={YOUR_API_KEY}`  
+  Useful for loading more detailed info about a specific movie when selected.
+
+## 📌 Challenges
+
+- Felt challenges in api integration to fetch data
+- Some style attributes like movie card hover I felt difficulties
+
+---
+
+
+
+
